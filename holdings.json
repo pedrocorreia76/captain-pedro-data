@@ -1,0 +1,56 @@
+{
+ "note": "Scale-free composition for Captain Pedro's site: units and costs divided by a private constant. No amounts.",
+ "asOf": "2026-11-12",
+ "source": "Bolero portfolio report 12-11-2026",
+ "units": {
+  "AMZN": 0.000483837449,
+  "BKNG": 0.000414717813,
+  "DUOL": 0.000362878087,
+  "GRAB": 0.01430776456,
+  "MA": 0.000276478542,
+  "MCD": 0.000172799089,
+  "MELI": 5.1839727e-05,
+  "MSFT": 0.000241918724,
+  "NFLX": 0.000604796811,
+  "SPGI": 0.000276478542,
+  "SE": 0.000535677176,
+  "SPOT": 0.000103679453,
+  "V": 5.1839727e-05
+ },
+ "cost": {
+  "AMZN": 0.1031874943,
+  "BKNG": 0.0669280247,
+  "DUOL": 0.049643623,
+  "GRAB": 0.0522216127,
+  "MA": 0.1367042968,
+  "MCD": 0.0459415754,
+  "MELI": 0.0855263907,
+  "MSFT": 0.0968296975,
+  "NFLX": 0.0503999647,
+  "SPGI": 0.117394517,
+  "SE": 0.0509055748,
+  "SPOT": 0.047494348,
+  "V": 0.0171618871
+ },
+ "sharesCostEur": 0.8302450176,
+ "eur": {
+  "IEGA": [
+   0.0838156797,
+   0.0824096135
+  ],
+  "ETH": [
+   0.0172543346,
+   0.0184879473
+  ]
+ },
+ "ex": [
+  {
+   "t": "ZTS",
+   "n": "Zoetis",
+   "sold": "2026-10-22",
+   "px": 82.0
+  }
+ ],
+ "fx": 1.10852,
+ "fxNote": "EUR/USD implied by the Bolero report (USD total / EUR total)"
+}

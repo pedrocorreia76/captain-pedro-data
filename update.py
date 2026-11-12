@@ -3,8 +3,8 @@
 Usage: python3 update.py fetched.json   -> writes prices.json, or exits 1 without writing if data is incomplete."""
 import json, sys, datetime, collections
 HOLD = ["AMZN","BKNG","DUOL","GRAB","MA","MCD","MELI","MSFT","NFLX","SPGI","SE","SPOT","V"]
-WATCH = ["META","GOOG","NVO","O","VICI","CEG","GEV","VST"]
-BASE = "2026-11-11"  # history before this date is built into the page
+WATCH = ["META","GOOG","NVO","O","VICI","CEG","GEV","VST","ZTS"]  # watch list + sold positions (ex-passengers)
+BASE = "2026-04-30"  # history kept from 1 May 2026
 inp = json.load(open(sys.argv[1]))
 try: out = json.load(open("prices.json"))
 except FileNotFoundError: out = {"source": "Fiscal.ai", "hist": {}}
