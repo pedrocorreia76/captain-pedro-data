@@ -1,0 +1,162 @@
+{
+ "note": "Research report summary per holding: rating and 12-month bear/base/bull values in USD, from the latest version of each report. No amounts or position sizes.",
+ "asOf": "2026-11-12",
+ "reports": [
+  {
+   "t": "AMZN",
+   "n": "Amazon",
+   "rating": "BUY",
+   "conviction": "Medium-High",
+   "provisional": false,
+   "bear": 222,
+   "base": 329,
+   "bull": 438,
+   "updated": "2026-11-01",
+   "url": "https://claude.ai/artifact/1XMuSfncvhUmyDKY4qX4qU"
+  },
+  {
+   "t": "BKNG",
+   "n": "Booking",
+   "rating": "BUY",
+   "conviction": "Moderate",
+   "provisional": true,
+   "bear": 135,
+   "base": 186,
+   "bull": 245,
+   "updated": "2026-11-04",
+   "url": "https://claude.ai/artifact/4D25qdiaQaUEwL7mkxQVAv"
+  },
+  {
+   "t": "DUOL",
+   "n": "Duolingo",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 106,
+   "base": 159,
+   "bull": 202,
+   "updated": "2026-11-12",
+   "url": "https://claude.ai/artifact/XkEYiayZ9YkW121eARbcK3"
+  },
+  {
+   "t": "GRAB",
+   "n": "Grab",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 2.33,
+   "base": 3.46,
+   "bull": 4.77,
+   "updated": "2026-11-12",
+   "url": "https://claude.ai/artifact/MQL5suQhs6tj1WejcW6SMi"
+  },
+  {
+   "t": "MA",
+   "n": "Mastercard",
+   "rating": "BUY",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 494,
+   "base": 627,
+   "bull": 756,
+   "updated": "2026-10-30",
+   "url": "https://claude.ai/artifact/BTGuEBHaUjMYKfFT3V1j47"
+  },
+  {
+   "t": "MCD",
+   "n": "McDonald's",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 226,
+   "base": 274,
+   "bull": 332,
+   "updated": "2026-11-05",
+   "url": "https://claude.ai/artifact/8UNjsFcgbtVKBcx8bYe9KG"
+  },
+  {
+   "t": "MELI",
+   "n": "MercadoLibre",
+   "rating": "HOLD",
+   "conviction": "",
+   "provisional": false,
+   "bear": 1221,
+   "base": 1717,
+   "bull": 2480,
+   "updated": "2026-11-12",
+   "url": "https://claude.ai/artifact/4NRZSZMPCCNbSczamGbuwU"
+  },
+  {
+   "t": "MSFT",
+   "n": "Microsoft",
+   "rating": "BUY",
+   "conviction": "Medium-High",
+   "provisional": false,
+   "bear": 439,
+   "base": 598,
+   "bull": 738,
+   "updated": "2026-10-29",
+   "url": "https://claude.ai/artifact/EsKeH3fMjvyedRgUC7KHNw"
+  },
+  {
+   "t": "NFLX",
+   "n": "Netflix",
+   "rating": "BUY",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 60,
+   "base": 81,
+   "bull": 103,
+   "updated": "2026-10-21",
+   "url": "https://claude.ai/artifact/BiNxEU4p2ZEv9L5KQddDqg"
+  },
+  {
+   "t": "SPGI",
+   "n": "S&P Global",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 324,
+   "base": 439,
+   "bull": 569,
+   "updated": "2026-10-28",
+   "url": "https://claude.ai/artifact/Bqv5vXjkktPcS3BaufmQjz"
+  },
+  {
+   "t": "SE",
+   "n": "Sea Limited",
+   "rating": "BUY",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 65.4,
+   "base": 102.1,
+   "bull": 146.0,
+   "updated": "2026-11-10",
+   "url": "https://claude.ai/artifact/N5sQ7ZR7tb85TAtbEcYNRv"
+  },
+  {
+   "t": "SPOT",
+   "n": "Spotify",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 401.76,
+   "base": 543.45,
+   "bull": 704.54,
+   "updated": "2026-11-11",
+   "url": "https://claude.ai/artifact/WE3bwmq3gk3Sh7hwb3PSPJ"
+  },
+  {
+   "t": "V",
+   "n": "Visa",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 323,
+   "base": 420,
+   "bull": 504,
+   "updated": "2026-10-28",
+   "url": "https://claude.ai/artifact/QYLfM6zvNtkJAFE6T6ZUK8"
+  }
+ ]
+}
