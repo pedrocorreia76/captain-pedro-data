@@ -1,5 +1,5 @@
 {
- "note": "Research report summary per holding ('reports') and per watch-list stock ('watch'): rating and 12-month bear/base/bull values in USD, from the latest version of each report. No amounts or position sizes.",
+ "note": "Research report summary per holding ('reports') and for every other stock with a research report ('watch', incl. sold positions): rating and 12-month bear/base/bull values in the stated currency (ASML in EUR, Euronext price), from the latest version of each report. No amounts or position sizes.",
  "asOf": "2026-11-12",
  "reports": [
   {
@@ -12,7 +12,8 @@
    "base": 329,
    "bull": 438,
    "updated": "2026-11-01",
-   "url": "https://claude.ai/artifact/1XMuSfncvhUmyDKY4qX4qU"
+   "url": "https://claude.ai/artifact/1XMuSfncvhUmyDKY4qX4qU",
+   "currency": "USD"
   },
   {
    "t": "BKNG",
@@ -24,7 +25,8 @@
    "base": 186,
    "bull": 245,
    "updated": "2026-11-04",
-   "url": "https://claude.ai/artifact/4D25qdiaQaUEwL7mkxQVAv"
+   "url": "https://claude.ai/artifact/4D25qdiaQaUEwL7mkxQVAv",
+   "currency": "USD"
   },
   {
    "t": "DUOL",
@@ -36,7 +38,8 @@
    "base": 159,
    "bull": 202,
    "updated": "2026-11-12",
-   "url": "https://claude.ai/artifact/XkEYiayZ9YkW121eARbcK3"
+   "url": "https://claude.ai/artifact/XkEYiayZ9YkW121eARbcK3",
+   "currency": "USD"
   },
   {
    "t": "GRAB",
@@ -48,7 +51,8 @@
    "base": 3.46,
    "bull": 4.77,
    "updated": "2026-11-12",
-   "url": "https://claude.ai/artifact/MQL5suQhs6tj1WejcW6SMi"
+   "url": "https://claude.ai/artifact/MQL5suQhs6tj1WejcW6SMi",
+   "currency": "USD"
   },
   {
    "t": "MA",
@@ -60,7 +64,8 @@
    "base": 627,
    "bull": 756,
    "updated": "2026-10-30",
-   "url": "https://claude.ai/artifact/BTGuEBHaUjMYKfFT3V1j47"
+   "url": "https://claude.ai/artifact/BTGuEBHaUjMYKfFT3V1j47",
+   "currency": "USD"
   },
   {
    "t": "MCD",
@@ -72,7 +77,8 @@
    "base": 274,
    "bull": 332,
    "updated": "2026-11-05",
-   "url": "https://claude.ai/artifact/8UNjsFcgbtVKBcx8bYe9KG"
+   "url": "https://claude.ai/artifact/8UNjsFcgbtVKBcx8bYe9KG",
+   "currency": "USD"
   },
   {
    "t": "MELI",
@@ -84,7 +90,8 @@
    "base": 1717,
    "bull": 2480,
    "updated": "2026-11-12",
-   "url": "https://claude.ai/artifact/4NRZSZMPCCNbSczamGbuwU"
+   "url": "https://claude.ai/artifact/4NRZSZMPCCNbSczamGbuwU",
+   "currency": "USD"
   },
   {
    "t": "MSFT",
@@ -96,7 +103,8 @@
    "base": 598,
    "bull": 738,
    "updated": "2026-10-29",
-   "url": "https://claude.ai/artifact/EsKeH3fMjvyedRgUC7KHNw"
+   "url": "https://claude.ai/artifact/EsKeH3fMjvyedRgUC7KHNw",
+   "currency": "USD"
   },
   {
    "t": "NFLX",
@@ -108,7 +116,8 @@
    "base": 81,
    "bull": 103,
    "updated": "2026-10-21",
-   "url": "https://claude.ai/artifact/BiNxEU4p2ZEv9L5KQddDqg"
+   "url": "https://claude.ai/artifact/BiNxEU4p2ZEv9L5KQddDqg",
+   "currency": "USD"
   },
   {
    "t": "SPGI",
@@ -120,7 +129,8 @@
    "base": 439,
    "bull": 569,
    "updated": "2026-10-28",
-   "url": "https://claude.ai/artifact/Bqv5vXjkktPcS3BaufmQjz"
+   "url": "https://claude.ai/artifact/Bqv5vXjkktPcS3BaufmQjz",
+   "currency": "USD"
   },
   {
    "t": "SE",
@@ -132,7 +142,8 @@
    "base": 102.1,
    "bull": 146.0,
    "updated": "2026-11-10",
-   "url": "https://claude.ai/artifact/N5sQ7ZR7tb85TAtbEcYNRv"
+   "url": "https://claude.ai/artifact/N5sQ7ZR7tb85TAtbEcYNRv",
+   "currency": "USD"
   },
   {
    "t": "SPOT",
@@ -144,7 +155,8 @@
    "base": 543.45,
    "bull": 704.54,
    "updated": "2026-11-11",
-   "url": "https://claude.ai/artifact/WE3bwmq3gk3Sh7hwb3PSPJ"
+   "url": "https://claude.ai/artifact/WE3bwmq3gk3Sh7hwb3PSPJ",
+   "currency": "USD"
   },
   {
    "t": "V",
@@ -156,7 +168,8 @@
    "base": 420,
    "bull": 504,
    "updated": "2026-10-28",
-   "url": "https://claude.ai/artifact/QYLfM6zvNtkJAFE6T6ZUK8"
+   "url": "https://claude.ai/artifact/QYLfM6zvNtkJAFE6T6ZUK8",
+   "currency": "USD"
   }
  ],
  "watch": [
@@ -170,7 +183,8 @@
    "base": 387,
    "bull": 498,
    "updated": "2026-10-29",
-   "url": "https://claude.ai/artifact/D9CdFY8ZJiYqJVxGTGxfSN"
+   "url": "https://claude.ai/artifact/D9CdFY8ZJiYqJVxGTGxfSN",
+   "currency": "USD"
   },
   {
    "t": "GEV",
@@ -182,7 +196,8 @@
    "base": 954,
    "bull": 1329,
    "updated": "2026-11-05",
-   "url": "https://claude.ai/artifact/Sj4bYQ95QWdzy1ZsBk38CT"
+   "url": "https://claude.ai/artifact/Sj4bYQ95QWdzy1ZsBk38CT",
+   "currency": "USD"
   },
   {
    "t": "NVO",
@@ -194,7 +209,8 @@
    "base": 46.5,
    "bull": 62,
    "updated": "2026-11-05",
-   "url": "https://claude.ai/artifact/HvTxb1pnV2V6xodAi4NQQZ"
+   "url": "https://claude.ai/artifact/HvTxb1pnV2V6xodAi4NQQZ",
+   "currency": "USD"
   },
   {
    "t": "CEG",
@@ -206,7 +222,8 @@
    "base": 298,
    "bull": 391,
    "updated": "2026-11-10",
-   "url": "https://claude.ai/artifact/71VUGCdZPoerNZpds78hSF"
+   "url": "https://claude.ai/artifact/71VUGCdZPoerNZpds78hSF",
+   "currency": "USD"
   },
   {
    "t": "VICI",
@@ -218,7 +235,8 @@
    "base": 27.01,
    "bull": 31.25,
    "updated": "2026-11-02",
-   "url": "https://claude.ai/artifact/CxuH1wc2bv6tomHUaQBREU"
+   "url": "https://claude.ai/artifact/CxuH1wc2bv6tomHUaQBREU",
+   "currency": "USD"
   },
   {
    "t": "META",
@@ -230,7 +248,8 @@
    "base": 663,
    "bull": 854,
    "updated": "2026-11-02",
-   "url": "https://claude.ai/artifact/54pc7jDcY9xrvGRQ9GP2ga"
+   "url": "https://claude.ai/artifact/54pc7jDcY9xrvGRQ9GP2ga",
+   "currency": "USD"
   },
   {
    "t": "VST",
@@ -242,7 +261,8 @@
    "base": 138,
    "bull": 194,
    "updated": "2026-11-09",
-   "url": "https://claude.ai/artifact/SHYXXjALXdsGtD775wpkVk"
+   "url": "https://claude.ai/artifact/SHYXXjALXdsGtD775wpkVk",
+   "currency": "USD"
   },
   {
    "t": "O",
@@ -254,7 +274,346 @@
    "base": 55.02,
    "bull": 62.22,
    "updated": "2026-11-03",
-   "url": "https://claude.ai/artifact/UoEsZoYUR3nbdM2qnsFYga"
+   "url": "https://claude.ai/artifact/UoEsZoYUR3nbdM2qnsFYga",
+   "currency": "USD"
+  },
+  {
+   "t": "BE",
+   "n": "Bloom Energy",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 70.25,
+   "base": 167.27,
+   "bull": 235.51,
+   "updated": "2026-11-11",
+   "url": "https://claude.ai/artifact/LVvDqqVESxP9sqUrnHFJ42",
+   "currency": "USD"
+  },
+  {
+   "t": "ZETA",
+   "n": "Zeta Global",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 21.94,
+   "base": 33.56,
+   "bull": 48.17,
+   "updated": "2026-11-11",
+   "url": "https://claude.ai/artifact/RrkkGtjgbvKuchdsAjAbwu",
+   "currency": "USD"
+  },
+  {
+   "t": "ASTS",
+   "n": "AST SpaceMobile",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 9.53,
+   "base": 30.96,
+   "bull": 59.2,
+   "updated": "2026-11-11",
+   "url": "https://claude.ai/artifact/6gBKw7f46xfymiCPRE56jr",
+   "currency": "USD"
+  },
+  {
+   "t": "BRK.B",
+   "n": "Berkshire Hathaway",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 436.9,
+   "base": 529.65,
+   "bull": 600.51,
+   "updated": "2026-11-11",
+   "url": "https://claude.ai/artifact/XcePh13FESvFeBBuqZYMA2",
+   "currency": "USD"
+  },
+  {
+   "t": "ZTS",
+   "n": "Zoetis",
+   "rating": "SELL",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 59,
+   "base": 73,
+   "bull": 103,
+   "updated": "2026-11-09",
+   "url": "https://claude.ai/artifact/MethDi7F2anB4xaZcCHPd6",
+   "currency": "USD"
+  },
+  {
+   "t": "ORCL",
+   "n": "Oracle",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 75,
+   "base": 140,
+   "bull": 196,
+   "updated": "2026-11-05",
+   "url": "https://claude.ai/artifact/DVfoTmPxFicicAuxiRczeK",
+   "currency": "USD"
+  },
+  {
+   "t": "AMD",
+   "n": "AMD",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 279,
+   "base": 513,
+   "bull": 722,
+   "updated": "2026-11-04",
+   "url": "https://claude.ai/artifact/954Gr7679Zi6Qqp4gahXSu",
+   "currency": "USD"
+  },
+  {
+   "t": "HIMS",
+   "n": "Hims & Hers",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 13.5,
+   "base": 28.2,
+   "bull": 45.0,
+   "updated": "2026-11-10",
+   "url": "https://claude.ai/artifact/6U5StGCLTTyoJ3fKeAHH9i",
+   "currency": "USD"
+  },
+  {
+   "t": "RKLB",
+   "n": "Rocket Lab",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 25.6,
+   "base": 42.9,
+   "bull": 70.2,
+   "updated": "2026-11-10",
+   "url": "https://claude.ai/artifact/1KWF1R6b1gZpFsG9mnaBkV",
+   "currency": "USD"
+  },
+  {
+   "t": "PLTR",
+   "n": "Palantir",
+   "rating": "SELL",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 76,
+   "base": 135,
+   "bull": 185,
+   "updated": "2026-11-03",
+   "url": "https://claude.ai/artifact/KNNeXEwJipGL5ZGDDoqr3d",
+   "currency": "USD"
+  },
+  {
+   "t": "IDXX",
+   "n": "IDEXX Laboratories",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 410,
+   "base": 547,
+   "bull": 691,
+   "updated": "2026-11-03",
+   "url": "https://claude.ai/artifact/FAUjez1PwDqvNG8xJ4kong",
+   "currency": "USD"
+  },
+  {
+   "t": "GRMN",
+   "n": "Garmin",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 187,
+   "base": 265,
+   "bull": 343,
+   "updated": "2026-11-02",
+   "url": "https://claude.ai/artifact/NrBe8F9aUPa7QoWsCdt3rG",
+   "currency": "USD"
+  },
+  {
+   "t": "WPC",
+   "n": "W. P. Carey",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 57.4,
+   "base": 65.9,
+   "bull": 74.8,
+   "updated": "2026-11-02",
+   "url": "https://claude.ai/artifact/XW9UYaVpppDudRbmfF4xXj",
+   "currency": "USD"
+  },
+  {
+   "t": "FTNT",
+   "n": "Fortinet",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": true,
+   "bear": 90,
+   "base": 137,
+   "bull": 176,
+   "updated": "2026-10-30",
+   "url": "https://claude.ai/artifact/QzjJvevRpWh9JgxVfExGbQ",
+   "currency": "USD"
+  },
+  {
+   "t": "WM",
+   "n": "WM (Waste Management)",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 187,
+   "base": 232,
+   "bull": 270,
+   "updated": "2026-10-29",
+   "url": "https://claude.ai/artifact/LuaA3toZeR1JfK4DVDEzjU",
+   "currency": "USD"
+  },
+  {
+   "t": "VRT",
+   "n": "Vertiv",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 128,
+   "base": 227,
+   "bull": 324,
+   "updated": "2026-10-29",
+   "url": "https://claude.ai/artifact/NtZ6Ef6ghhZcUpq5ggsUUn",
+   "currency": "USD"
+  },
+  {
+   "t": "HOOD",
+   "n": "Robinhood",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 55,
+   "base": 98.3,
+   "bull": 139,
+   "updated": "2026-10-28",
+   "url": "https://claude.ai/artifact/Ee7Ly5443s8t3gTkZzCz54",
+   "currency": "USD"
+  },
+  {
+   "t": "SOFI",
+   "n": "SoFi Technologies",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 11.2,
+   "base": 19.5,
+   "bull": 27.3,
+   "updated": "2026-10-28",
+   "url": "https://claude.ai/artifact/HYfYsfeH8vbE7vAhbqwDLs",
+   "currency": "USD"
+  },
+  {
+   "t": "KO",
+   "n": "Coca-Cola",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 74.79,
+   "base": 88.28,
+   "bull": 101.33,
+   "updated": "2026-10-28",
+   "url": "https://claude.ai/artifact/6RCq2S1cZxmRR3sVSxbU3h",
+   "currency": "USD"
+  },
+  {
+   "t": "PG",
+   "n": "Procter & Gamble",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 136,
+   "base": 165,
+   "bull": 196,
+   "updated": "2026-10-23",
+   "url": "https://claude.ai/artifact/T9W13WstLPJW44FpfUwTNB",
+   "currency": "USD"
+  },
+  {
+   "t": "NBIS",
+   "n": "Nebius",
+   "rating": "SELL",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 55,
+   "base": 147,
+   "bull": 253,
+   "updated": "2026-10-21",
+   "url": "https://claude.ai/artifact/AAXa2n9Hy2tx2jJrqW4PgD",
+   "currency": "USD"
+  },
+  {
+   "t": "MSCI",
+   "n": "MSCI",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 462,
+   "base": 605,
+   "bull": 755,
+   "updated": "2026-10-21",
+   "url": "https://claude.ai/artifact/CxesEKpv5oVg9hJkBvKaQX",
+   "currency": "USD"
+  },
+  {
+   "t": "GE",
+   "n": "GE Aerospace",
+   "rating": "HOLD",
+   "conviction": "Moderate",
+   "provisional": false,
+   "bear": 214,
+   "base": 325,
+   "bull": 403,
+   "updated": "2026-10-21",
+   "url": "https://claude.ai/artifact/8vXrtCasqXmmUuM2vwsL75",
+   "currency": "USD"
+  },
+  {
+   "t": "UNH",
+   "n": "UnitedHealth",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 294,
+   "base": 418,
+   "bull": 504,
+   "updated": "2026-10-19",
+   "url": "https://claude.ai/artifact/WSTSGBpjWWZ3GujdkkUFWB",
+   "currency": "USD"
+  },
+  {
+   "t": "ASML",
+   "n": "ASML",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 950,
+   "base": 1600,
+   "bull": 2090,
+   "updated": "2026-10-19",
+   "url": "https://claude.ai/artifact/FNCShBtgVh6q2RF5xduNM7",
+   "currency": "EUR"
+  },
+  {
+   "t": "BN",
+   "n": "Brookfield Corporation",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 24,
+   "base": 35,
+   "bull": 46,
+   "updated": "2026-10-14",
+   "url": "https://claude.ai/artifact/6vD1nZDFJHdMy9DPERCfPK",
+   "currency": "USD"
   }
  ]
 }
