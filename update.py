@@ -8,9 +8,14 @@ BASE = "2026-11-11"  # history before this date is built into the page
 inp = json.load(open(sys.argv[1]))
 try: out = json.load(open("prices.json"))
 except FileNotFoundError: out = {"source": "Fiscal.ai", "hist": {}}
+from zoneinfo import ZoneInfo
+fetched = datetime.datetime.fromisoformat((inp.get("fetched") or datetime.datetime.utcnow().isoformat() + "Z").replace("Z", "+00:00"))
+ny = fetched.astimezone(ZoneInfo("America/New_York"))
+ny_day, ny_min = ny.date().isoformat(), ny.hour * 60 + ny.minute
 series = collections.defaultdict(dict)
 for t, d, c in inp["rows"]:
     if c is None: continue
+    if d == ny_day and ny_min < 9 * 60 + 35: continue  # pre-market rows are not prices of the session
     series[t][d] = float(c)
 missing = [t for t in HOLD + ["SPY"] if len(series[t]) < 2]
 if missing:
@@ -27,6 +32,7 @@ hist = out.get("hist", {})
 days = set.intersection(*[set(series[t]) for t in HOLD + ["SPY"]])
 for d in sorted(days):
     if BASE < d <= as_of: hist[d] = {t: series[t][d] for t in HOLD + ["SPY"]}
-out.update({"source": "Fiscal.ai", "asOf": as_of, "updated": inp.get("fetched") or datetime.datetime.utcnow().isoformat() + "Z", "px": px, "stale": stale, "hist": dict(sorted(hist.items()))})
+intraday = as_of == ny_day and ny_min < 16 * 60 + 20
+out.update({"source": "Fiscal.ai", "asOf": as_of, "intraday": intraday, "updated": inp.get("fetched") or datetime.datetime.utcnow().isoformat() + "Z", "px": px, "stale": stale, "hist": dict(sorted(hist.items()))})
 json.dump(out, open("prices.json", "w"), separators=(",", ":"))
-print("OK asOf", as_of, "tickers", len(px), "stale", stale, "hist days", len(hist))
+print("OK asOf", as_of, "intraday", intraday, "tickers", len(px), "stale", stale, "hist days", len(hist))
