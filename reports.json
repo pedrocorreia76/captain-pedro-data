@@ -1,5 +1,5 @@
 {
- "note": "Research report summary per holding: rating and 12-month bear/base/bull values in USD, from the latest version of each report. No amounts or position sizes.",
+ "note": "Research report summary per holding ('reports') and per watch-list stock ('watch'): rating and 12-month bear/base/bull values in USD, from the latest version of each report. No amounts or position sizes.",
  "asOf": "2026-11-12",
  "reports": [
   {
@@ -157,6 +157,104 @@
    "bull": 504,
    "updated": "2026-10-28",
    "url": "https://claude.ai/artifact/QYLfM6zvNtkJAFE6T6ZUK8"
+  }
+ ],
+ "watch": [
+  {
+   "t": "GOOG",
+   "n": "Alphabet",
+   "rating": "BUY",
+   "conviction": "Low",
+   "provisional": true,
+   "bear": 269,
+   "base": 387,
+   "bull": 498,
+   "updated": "2026-10-29",
+   "url": "https://claude.ai/artifact/D9CdFY8ZJiYqJVxGTGxfSN"
+  },
+  {
+   "t": "GEV",
+   "n": "GE Vernova",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 609,
+   "base": 954,
+   "bull": 1329,
+   "updated": "2026-11-05",
+   "url": "https://claude.ai/artifact/Sj4bYQ95QWdzy1ZsBk38CT"
+  },
+  {
+   "t": "NVO",
+   "n": "Novo Nordisk",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 28,
+   "base": 46.5,
+   "bull": 62,
+   "updated": "2026-11-05",
+   "url": "https://claude.ai/artifact/HvTxb1pnV2V6xodAi4NQQZ"
+  },
+  {
+   "t": "CEG",
+   "n": "Constellation Energy",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 218,
+   "base": 298,
+   "bull": 391,
+   "updated": "2026-11-10",
+   "url": "https://claude.ai/artifact/71VUGCdZPoerNZpds78hSF"
+  },
+  {
+   "t": "VICI",
+   "n": "VICI Properties",
+   "rating": "BUY",
+   "conviction": "Low-Medium",
+   "provisional": false,
+   "bear": 20.05,
+   "base": 27.01,
+   "bull": 31.25,
+   "updated": "2026-11-02",
+   "url": "https://claude.ai/artifact/CxuH1wc2bv6tomHUaQBREU"
+  },
+  {
+   "t": "META",
+   "n": "Meta Platforms",
+   "rating": "HOLD",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 443,
+   "base": 663,
+   "bull": 854,
+   "updated": "2026-11-02",
+   "url": "https://claude.ai/artifact/54pc7jDcY9xrvGRQ9GP2ga"
+  },
+  {
+   "t": "VST",
+   "n": "Vistra",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 88,
+   "base": 138,
+   "bull": 194,
+   "updated": "2026-11-09",
+   "url": "https://claude.ai/artifact/SHYXXjALXdsGtD775wpkVk"
+  },
+  {
+   "t": "O",
+   "n": "Realty Income",
+   "rating": "HOLD",
+   "conviction": "Medium",
+   "provisional": true,
+   "bear": 48.12,
+   "base": 55.02,
+   "bull": 62.22,
+   "updated": "2026-11-03",
+   "url": "https://claude.ai/artifact/UoEsZoYUR3nbdM2qnsFYga"
   }
  ]
 }
