@@ -4,7 +4,7 @@ Usage: python3 update.py fetched.json   -> writes prices.json, or exits 1 withou
 import json, sys, datetime, collections
 HOLD = ["AMZN","BKNG","DUOL","GRAB","MA","MCD","MELI","MSFT","NFLX","SPGI","SE","SPOT","V"]
 WATCH = ["META","GOOG","NVO","O","VICI","CEG","GEV","VST","ZTS","HIMS",
-         "BE","ZETA","ASTS","BRK.B","ORCL","AMD","RKLB","PLTR","IDXX","GRMN","WPC","FTNT","WM","VRT","HOOD","SOFI","KO","PG","NBIS","MSCI","GE","UNH","ASML","BN"]  # every stock with a research report that is not a holding (ASML in EUR)
+         "BE","ZETA","ASTS","BRK.B","ORCL","AMD","RKLB","PLTR","IDXX","GRMN","WPC","FTNT","WM","VRT","HOOD","SOFI","KO","PG","NBIS","MSCI","GE","UNH","ASML","BN","DLO"]  # every stock with a research report that is not a holding (ASML in EUR)
 BASE = "2026-04-30"  # history kept from 1 May 2026
 inp = json.load(open(sys.argv[1]))
 try: out = json.load(open("prices.json"))

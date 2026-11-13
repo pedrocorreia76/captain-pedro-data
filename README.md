@@ -5,3 +5,4 @@ Daily closing prices (from Fiscal.ai) for Captain Pedro's portfolio site. Update
 ## Website
 `site/index.html` is the Captain Pedro's Portfolio Tower website (https://captain-pedro.netlify.app). Netlify deploys it from this repo (see `netlify.toml`); commits that only touch the JSON data files don't trigger a deploy.
 `reports.json` holds the rating and bear/base/bull values per holding shown in the "Pilot's logbook" section.
+`build_reports.py` rebuilds `reports.json` from the latest entry of each report in the project's Valuation_Params.json plus Report_Links.json (both kept outside this repo); the scheduled price job runs it on every run.
