@@ -249,6 +249,13 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
 .ev .ch { font-family: var(--font-display); font-size: 13px; text-align: right; grid-row: 1 / 3; grid-column: 2; align-self: center; }
 .ev .ch small { display: block; font-size: 10px; color: var(--muted); }
 .bbmore { margin-top: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 8px 14px; font: inherit; cursor: pointer; }
+/* Scorecard */
+.scgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 14px; }
+.sc { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+.sc .lbl { font-family: var(--font-display); font-size: 11px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
+.sc .big { font-family: var(--font-display); font-size: 38px; margin: 6px 0 2px; }
+.sc .sub { font-family: var(--font-display); font-size: 13px; color: var(--amber); }
+.sc p { font-size: 14px; margin: 10px 0 0; }
 /* Risk */
 .risks { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
 .risk { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; }
@@ -464,6 +471,16 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
     <div class="quiz" id="quiz"></div>
   </section>
 
+  <section id="score">
+    <h2 data-t="scH">Captain's scorecard · two ways to score the flight</h2>
+    <div class="scgrid">
+      <div class="sc"><div class="lbl" data-t="scIrrL">IRR · money-weighted</div><div class="big" id="scIrr">–</div><div class="sub" id="scIrrSub"></div><p data-t="scIrrP">How the captain's euros did, counting when each euro was added. Good timing makes it go up.</p></div>
+      <div class="sc"><div class="lbl" data-t="scTwrL">TTWROR · true time-weighted</div><div class="big" id="scTwr">–</div><div class="sub" id="scTwrSub"></div><p data-t="scTwrP">How the picks themselves did, as if the same money had flown the whole trip. It ignores when money was added, so it is the fair way to compare with an index.</p></div>
+    </div>
+    <p class="say" id="scWhy"></p>
+    <p class="sec-note" data-t="scNote">Computed from every buy and sell in the broker's records since 21 Jan 2026, using Fiscal.ai closing prices. Trade costs are included; the bond ETF's price between known points is estimated. Updates with the latest prices.</p>
+  </section>
+
   <section id="risk-sec">
     <h2 data-t="riskH">Turbulence report · what could go wrong</h2>
     <p class="sec-note" data-t="riskNote">Every flight has a safety card. Here is this portfolio's. The bars = how bumpy the captain thinks it could get; the percentage is how much of the plane sits in that seat.</p>
@@ -593,8 +610,10 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
     COST_EUR = SHARES_COST_EUR + EUR_ASSETS.reduce((a, x) => a + x.costEur, 0);
     if (Array.isArray(h.ex)) EX = h.ex;
     if (Array.isArray(h.tx) && h.tx.length) TX = h.tx;
+    if (h.perf && Array.isArray(h.perf.flows)) PERF = h.perf;
     return true;
   }
+  let PERF = {"start":"2026-01-21","flows":[["2026-01-21",0.026810604],["2026-01-23",0.041844855],["2026-01-26",0.029354088],["2026-01-27",0.027959262],["2026-01-29",0.055482972],["2026-02-03",0.043728862],["2026-02-04",0.013267599],["2026-02-05",0.037059927],["2026-02-10",0.011810723],["2026-02-12",0.058600202],["2026-02-17",0.017178821],["2026-02-23",0.026147568],["2026-02-24",0.014639614],["2026-02-25",0.026323568],["2026-03-03",0.015008636],["2026-03-12",0.015096995],["2026-03-18",0.02689909],["2026-03-24",0.011184063],["2026-03-27",0.029313006],["2026-04-23",-0.014612694],["2026-05-08",0.078091227],["2026-05-14",0.026819014],["2026-05-22",0.014974518],["2026-05-26",0.01233452],["2026-05-29",0.014710787],["2026-06-03",0.028481351],["2026-06-22",0.012347575],["2026-06-25",0.023086158],["2026-07-23",0.014253269],["2026-09-15",0.015075619],["2026-09-16",0.01517617],["2026-09-21",0.015174532],["2026-10-01",0.012072754],["2026-10-22",-0.014055036],["2026-10-23",0.030257661],["2026-10-27",0.041990179],["2026-10-28",0.014016244],["2026-11-05",0.023006429]],"twrLast":1.07641,"vLast":1.026465236,"lastDate":"2026-11-05"};
   const SNAP = { date: '2026-11-11', px: { AMZN:[266.17,270.87], BKNG:[160.21,159.26], DUOL:[164.12,156.67], GRAB:[3.33,3.35], MA:[660.73,658.84], MCD:[274.8,282.17], MELI:[1512.02,1490.24], MSFT:[521.125,533.16], NFLX:[64.54,63.26], SPGI:[475.11,473.38], SE:[73.99,76.8], SPOT:[609.12,606.22], V:[425.55,423] } };
   const GATE = { 'Consumer Discretionary':'DISC', 'Financials':'FIN', 'Information Technology':'TECH', 'Communication Services':'COMM', 'Industrials':'IND', 'EUR Government Bonds':'BOND', 'Crypto':'CRYP' };
   const COLORS = { MA:'#ff5f00', SPGI:'#c8102e', MSFT:'#00a4ef', AMZN:'#ff9900', IEGA:'#8a97a8', BKNG:'#3b6fd8', SPOT:'#1ed760', MELI:'#ffe600', DUOL:'#58cc02', MCD:'#fbc817', SE:'#ee4d2d', GRAB:'#00b14f', NFLX:'#e50914', ETH:'#8c9cf0', V:'#4f6bff' };
@@ -749,6 +768,9 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
       sndBlocked: 'Your browser blocked the sound', lugH: 'Lost luggage office', lugNote: "Holdings currently below what the captain paid. They're still going round the belt. Tap a bag for its boarding pass.", lugEmpty: 'Lost luggage office closed: every bag arrived above purchase price. Suspicious.',
       lugSt: ['DELAYED', 'REROUTED', 'MISHANDLED'], lugBelow: 'below purchase price',
       lugTag: { NFLX: 'Last seen binge-watching in the transfer lounge.', SE: 'Stopped in Singapore to go shopping. Still shopping.', GRAB: 'Took a ride to the airport. Driver went the long way.', BKNG: 'Booked itself on the wrong flight. Free cancellation, though.', MELI: 'Customs in Buenos Aires want a word.', DUOL: 'Missed the flight doing its daily lesson.', MCD: 'Stopped for fries. The ice cream machine was broken.', IEGA: 'The parachute. Lighter than expected, still packed.', MA: 'Even toll roads hit traffic.', V: 'Contactless, but not frictionless.', MSFT: 'Waiting for a reboot.', AMZN: 'Out for delivery. Any day now.', SPGI: 'Downgraded itself to economy.', SPOT: 'Stuck on a playlist loop.', ETH: 'Went through the blockchain. No receipt.' },
+      scH: "Captain's scorecard · two ways to score the flight", scIrrL: 'IRR · money-weighted', scTwrL: 'TTWROR · true time-weighted', scIrrP: "How the captain's euros did, counting when each euro was added. Good timing makes it go up.", scTwrP: 'How the picks themselves did, as if the same money had flown the whole trip. It ignores when money was added, so it is the fair way to compare with an index.', scNote: "Computed from every buy and sell in the broker's records since 21 Jan 2026, using Fiscal.ai closing prices. Trade costs are included; the bond ETF's price between known points is estimated. Updates with the latest prices.",
+      scYear: 'per year', scSince: 'since 21 Jan 2026', scOnMoney: 'on the money since 21 Jan 2026',
+      scWhyHi: 'Why is IRR so much higher? The first passengers boarded in January, right before some turbulence, but most of the fuel was added later at lower prices. The picks did okay; the timing of the top-ups did great.', scWhyLo: 'Why is IRR lower? Most of the money was added after the picks had already climbed, so the euros caught less of the ride than the picks did.', scWhyEq: 'Both scores agree: timing neither helped nor hurt much.',
       bbH: 'Black box recorder · every move the captain made', bbNote: "Every buy and sell since the first flight, from the broker's records. The percentage compares that day's closing price with the latest price, so it shows how the timing worked out, not the exact trade price. No quantities, no amounts.",
       bbMoves: 'cockpit actions', bbBuys: 'buys', bbSells: 'sells', bbBusy: 'busiest month', bbBest: 'smoothest landing', bbWorst: 'hardest landing', bbSince: 'since', bbTrip: 'round trip', bbAfter: 'after selling', bbAll: 'Show the whole flight log', bbLess: 'Show fewer',
       bbFirst: n => `New passenger boards: <b>${n}</b>. Welcome aboard.`, bbAgain: [n => `More <b>${n}</b>, please. The captain likes the snacks.`, n => `Captain doubles down on <b>${n}</b>.`, n => `Another round of <b>${n}</b> for row 1.`, n => `<b>${n}</b> again? Co-pilot rolls his eyes.`],
@@ -835,6 +857,9 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
       sndBlocked: 'O browser bloqueou o som', lugH: 'Perdidos e achados', lugNote: 'Posições abaixo do preço que o comandante pagou. Continuam a dar voltas no tapete. Toca numa mala para ver o cartão de embarque.', lugEmpty: 'Perdidos e achados fechado: todas as malas chegaram acima do preço de compra. Suspeito.',
       lugSt: ['ATRASADA', 'DESVIADA', 'EXTRAVIADA'], lugBelow: 'abaixo do preço de compra',
       lugTag: { NFLX: 'Vista pela última vez a ver séries na sala de trânsito.', SE: 'Parou em Singapura para fazer compras. Ainda está a fazer compras.', GRAB: 'Apanhou boleia para o aeroporto. O motorista foi pelo caminho mais longo.', BKNG: 'Reservou o voo errado. Pelo menos o cancelamento é grátis.', MELI: 'A alfândega de Buenos Aires quer falar com ela.', DUOL: 'Perdeu o voo a fazer a lição do dia.', MCD: 'Parou para batatas fritas. A máquina dos gelados estava avariada.', IEGA: 'O paraquedas. Mais leve do que o esperado, mas ainda dobrado.', MA: 'Até as portagens apanham trânsito.', V: 'Contactless, mas não sem atrito.', MSFT: 'À espera de reiniciar.', AMZN: 'Em distribuição. Chega a qualquer momento.', SPGI: 'Desceu-se a si própria para económica.', SPOT: 'Presa numa playlist em repetição.', ETH: 'Passou pela blockchain. Sem recibo.' },
+      scH: 'Cartão de pontuação do comandante · duas maneiras de avaliar o voo', scIrrL: 'TIR · ponderada pelo dinheiro', scTwrL: 'TTWROR · ponderada pelo tempo', scIrrP: 'Como correram os euros do comandante, contando quando cada euro entrou. Um bom timing faz subir.', scTwrP: 'Como correram as escolhas em si, como se o mesmo dinheiro tivesse feito a viagem toda. Ignora quando o dinheiro entrou, por isso é a forma justa de comparar com um índice.', scNote: 'Calculado a partir de todas as compras e vendas nos registos da corretora desde 21 jan 2026, com preços de fecho da Fiscal.ai. Inclui custos de transação; o preço do ETF de obrigações entre pontos conhecidos é estimado. Atualiza com os últimos preços.',
+      scYear: 'por ano', scSince: 'desde 21 jan 2026', scOnMoney: 'sobre o dinheiro desde 21 jan 2026',
+      scWhyHi: 'Porque é que a TIR é tão mais alta? Os primeiros passageiros embarcaram em janeiro, mesmo antes de alguma turbulência, mas a maior parte do combustível entrou depois, a preços mais baixos. As escolhas foram razoáveis; o timing dos reforços foi excelente.', scWhyLo: 'Porque é que a TIR é mais baixa? A maior parte do dinheiro entrou depois de as escolhas já terem subido, por isso os euros apanharam menos da viagem.', scWhyEq: 'As duas medidas concordam: o timing nem ajudou nem prejudicou muito.',
       bbH: 'Caixa negra · todas as manobras do comandante', bbNote: 'Todas as compras e vendas desde o primeiro voo, segundo os registos da corretora. A percentagem compara o preço de fecho desse dia com o último preço, por isso mostra como correu o timing, não o preço exato da ordem. Sem quantidades, sem montantes.',
       bbMoves: 'manobras no cockpit', bbBuys: 'compras', bbSells: 'vendas', bbBusy: 'mês mais movimentado', bbBest: 'aterragem mais suave', bbWorst: 'aterragem mais dura', bbSince: 'desde', bbTrip: 'ida e volta', bbAfter: 'depois de vender', bbAll: 'Ver o diário de bordo completo', bbLess: 'Ver menos',
       bbFirst: n => `Novo passageiro a bordo: <b>${n}</b>. Bem-vindo.`, bbAgain: [n => `Mais <b>${n}</b>, por favor. O comandante gosta dos snacks.`, n => `O comandante reforça a aposta na <b>${n}</b>.`, n => `Mais uma rodada de <b>${n}</b> para a fila 1.`, n => `<b>${n}</b> outra vez? O copiloto revira os olhos.`],
@@ -1340,6 +1365,22 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
   $('passClose').addEventListener('click', closeThesis);
   $('modal').addEventListener('click', e => { if (e.target === $('modal')) closeThesis(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('modal').classList.contains('open')) closeThesis(); });
+  function renderScore(m) {
+    if (!$('scIrr') || !PERF || !PERF.flows.length) return;
+    const V = m.rows.reduce((a, r) => a + r.valEur, 0), asOf = state.asOf;
+    const day = d => Date.parse(d + 'T12:00:00Z') / 864e5;
+    const t0 = day(PERF.start), tN = day(asOf), years = (tN - t0) / 365;
+    const twr = (asOf > PERF.lastDate ? PERF.twrLast * V / PERF.vLast : PERF.twrLast) - 1;
+    const cf = PERF.flows.map(([d, f]) => [day(d), -f]).concat([[tN, V]]);
+    const npv = r => cf.reduce((a, [t, c]) => a + c / Math.pow(1 + r, (t - t0) / 365), 0);
+    let lo = -0.99, hi = 10; for (let i = 0; i < 200; i++) { const mid = (lo + hi) / 2; if (npv(mid) > 0) lo = mid; else hi = mid; }
+    const irr = (lo + hi) / 2, irrCum = Math.pow(1 + irr, years) - 1, twrAnn = Math.pow(1 + twr, 1 / years) - 1;
+    $('scIrr').textContent = spct(irr * 100); $('scIrr').className = 'big ' + cls(irr);
+    $('scIrrSub').textContent = T('scYear') + ' · ' + spct(irrCum * 100) + ' ' + T('scOnMoney');
+    $('scTwr').textContent = spct(twr * 100); $('scTwr').className = 'big ' + cls(twr);
+    $('scTwrSub').textContent = T('scSince') + ' · ' + spct(twrAnn * 100) + ' ' + T('scYear');
+    $('scWhy').textContent = irrCum - twr > 0.03 ? T('scWhyHi') : twr - irrCum > 0.03 ? T('scWhyLo') : T('scWhyEq');
+  }
   function renderWelcome(m) {
     const stocks = m.rows.filter(r => r.ccy === 'USD');
     const top3 = m.rows.slice().sort((a, b) => b.w - a.w).slice(0, 3).reduce((a, r) => a + r.w, 0);
@@ -1647,7 +1688,7 @@ h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1
   // ---------- Render all ----------
   function renderAll(animate) {
     const m = compute();
-    renderHero(m); renderWelcome(m); renderRisks(m); renderLuggage(m); renderShop(); renderEx(); renderBlackBox(); renderCalls(m); renderReports(m); renderQuiz(); renderAlti(m); renderPick(m); renderBoard(m, animate); renderPie(m); renderMap(m); renderPassports(m); renderFx(); renderPerf();
+    renderHero(m); renderWelcome(m); renderScore(m); renderRisks(m); renderLuggage(m); renderShop(); renderEx(); renderBlackBox(); renderCalls(m); renderReports(m); renderQuiz(); renderAlti(m); renderPick(m); renderBoard(m, animate); renderPie(m); renderMap(m); renderPassports(m); renderFx(); renderPerf();
   }
   let rz, lastW = window.innerWidth; window.addEventListener('resize', () => { if (window.innerWidth === lastW) return; lastW = window.innerWidth; clearTimeout(rz); rz = setTimeout(() => { const m = compute(); renderPerf(); renderMap(m); }, 150); });
   applyStatic(); tickClock(); renderFeed();
