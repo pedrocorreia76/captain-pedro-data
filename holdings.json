@@ -500,12 +500,20 @@
     0.026323568
    ],
    [
+    "2026-03-02",
+    -3.0067e-05
+   ],
+   [
     "2026-03-03",
     0.015008636
    ],
    [
+    "2026-03-11",
+    -8.7091e-05
+   ],
+   [
     "2026-03-12",
-    0.015096995
+    0.015015261
    ],
    [
     "2026-03-18",
@@ -525,7 +533,7 @@
    ],
    [
     "2026-05-08",
-    0.078091227
+    0.077988411
    ],
    [
     "2026-05-14",
@@ -544,8 +552,28 @@
     0.014710787
    ],
    [
+    "2026-06-01",
+    -3.024e-05
+   ],
+   [
+    "2026-06-02",
+    -6.3763e-05
+   ],
+   [
     "2026-06-03",
     0.028481351
+   ],
+   [
+    "2026-06-10",
+    -0.000174873
+   ],
+   [
+    "2026-06-11",
+    -0.000164159
+   ],
+   [
+    "2026-06-16",
+    -8.3808e-05
    ],
    [
     "2026-06-22",
@@ -556,8 +584,28 @@
     0.023086158
    ],
    [
+    "2026-06-30",
+    -3.7843e-05
+   ],
+   [
+    "2026-07-01",
+    -0.000535332
+   ],
+   [
     "2026-07-23",
     0.014253269
+   ],
+   [
+    "2026-08-07",
+    -0.000210988
+   ],
+   [
+    "2026-09-01",
+    -9.4003e-05
+   ],
+   [
+    "2026-09-10",
+    -0.000395537
    ],
    [
     "2026-09-15",
@@ -565,11 +613,15 @@
    ],
    [
     "2026-09-16",
-    0.01517617
+    0.015008555
    ],
    [
     "2026-09-21",
     0.015174532
+   ],
+   [
+    "2026-09-30",
+    -3.7843e-05
    ],
    [
     "2026-10-01",
@@ -594,11 +646,16 @@
    [
     "2026-11-05",
     0.023006429
+   ],
+   [
+    "2026-11-09",
+    -0.00021669
    ]
   ],
-  "twrLast": 1.07641,
+  "twrLast": 1.0998,
   "vLast": 1.026465236,
   "lastDate": "2026-11-05",
-  "note": "Net investment flows per day (buys +, sells -) in EUR divided by the private scale constant; TTWROR chain-linked through lastDate. Built from Bolero transactions, Fiscal.ai closes, Massive EUR/USD and ETH prices; bond ETF prices interpolated between known points."
+  "note": "Net flows per day (buys +, sells and dividends received -) in EUR divided by the private scale constant. TTWROR chain-linked through lastDate with flows at the start of each day and gross dividends included. Built from Bolero transactions, Fiscal.ai closes and dividends, Massive EUR/USD, ETH and S&P Global Mobility prices; bond ETF prices interpolated and its distributions estimated.",
+  "divAfter": 0.00021669
  }
 }
