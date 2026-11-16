@@ -1,6 +1,6 @@
 {
  "note": "Research report summary per holding ('reports') and for every other stock with a research report ('watch', incl. sold positions): rating and 12-month bear/base/bull values in the stated currency (ASML in EUR, Euronext price), from the latest version of each report. No amounts or position sizes.",
- "asOf": "2026-11-13",
+ "asOf": "2026-11-16",
  "reports": [
   {
    "t": "AMZN",
@@ -371,12 +371,12 @@
   {
    "t": "IDXX",
    "rating": "HOLD",
-   "conviction": "Low",
-   "provisional": true,
-   "bear": 409.94,
-   "base": 546.65,
-   "bull": 690.55,
-   "updated": "2026-11-03",
+   "conviction": "Medium",
+   "provisional": false,
+   "bear": 412.11,
+   "base": 549.55,
+   "bull": 694.21,
+   "updated": "2026-11-16",
    "n": "IDEXX Laboratories",
    "url": "https://claude.ai/artifact/FAUjez1PwDqvNG8xJ4kong",
    "currency": "USD"
@@ -434,6 +434,19 @@
    "currency": "USD"
   },
   {
+   "t": "NVDA",
+   "rating": "BUY",
+   "conviction": "Low",
+   "provisional": false,
+   "bear": 121.75,
+   "base": 234.13,
+   "bull": 377.74,
+   "updated": "2026-11-13",
+   "n": "NVDA",
+   "url": "https://claude.ai/artifact/JJ4cvpMNsqLC8yExC9RBoB",
+   "currency": "USD"
+  },
+  {
    "t": "NVO",
    "rating": "HOLD",
    "conviction": "Medium",
@@ -450,11 +463,11 @@
    "t": "O",
    "rating": "HOLD",
    "conviction": "Medium",
-   "provisional": true,
-   "bear": 48.12,
-   "base": 55.02,
-   "bull": 62.22,
-   "updated": "2026-11-03",
+   "provisional": false,
+   "bear": 48.08,
+   "base": 54.98,
+   "bull": 62.17,
+   "updated": "2026-11-16",
    "n": "Realty Income",
    "url": "https://claude.ai/artifact/UoEsZoYUR3nbdM2qnsFYga",
    "currency": "USD"
@@ -487,13 +500,13 @@
   },
   {
    "t": "PLTR",
-   "rating": "SELL",
+   "rating": "HOLD",
    "conviction": "Medium",
-   "provisional": true,
-   "bear": 76.01,
-   "base": 134.59,
-   "bull": 184.58,
-   "updated": "2026-11-03",
+   "provisional": false,
+   "bear": 80.82,
+   "base": 143.32,
+   "bull": 196.67,
+   "updated": "2026-11-16",
    "n": "Palantir",
    "url": "https://claude.ai/artifact/KNNeXEwJipGL5ZGDDoqr3d",
    "currency": "USD"
