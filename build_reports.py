@@ -22,7 +22,7 @@ old_rows = {r["t"]: r for r in old.get("reports", []) + old.get("watch", [])}
 
 NAMES = {"AMZN": "Amazon", "BKNG": "Booking Holdings", "DUOL": "Duolingo", "GRAB": "Grab Holdings", "MA": "Mastercard",
          "MCD": "McDonald's", "MELI": "MercadoLibre", "MSFT": "Microsoft", "NFLX": "Netflix", "SPGI": "S&P Global",
-         "SE": "Sea Limited", "SPOT": "Spotify", "V": "Visa", "DLO": "dLocal"}
+         "SE": "Sea Limited", "SPOT": "Spotify", "V": "Visa", "DLO": "dLocal", "NVDA": "NVIDIA"}
 CURRENCY = {"ASML": "EUR"}  # report values in euros (Euronext price)
 
 
