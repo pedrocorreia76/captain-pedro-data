@@ -226,19 +226,6 @@
    "currency": "USD"
   },
   {
-   "t": "BN",
-   "rating": "HOLD",
-   "conviction": "Medium",
-   "provisional": false,
-   "bear": 24,
-   "base": 35,
-   "bull": 46,
-   "updated": "2026-10-14",
-   "n": "Brookfield Corporation",
-   "url": "https://claude.ai/artifact/6vD1nZDFJHdMy9DPERCfPK",
-   "currency": "USD"
-  },
-  {
    "t": "BRK.B",
    "rating": "HOLD",
    "conviction": "Medium",
@@ -600,19 +587,6 @@
    "updated": "2026-10-29",
    "n": "WM (Waste Management)",
    "url": "https://claude.ai/artifact/LuaA3toZeR1JfK4DVDEzjU",
-   "currency": "USD"
-  },
-  {
-   "t": "WPC",
-   "rating": "HOLD",
-   "conviction": "Medium",
-   "provisional": true,
-   "bear": 57.39,
-   "base": 65.87,
-   "bull": 74.82,
-   "updated": "2026-11-02",
-   "n": "W. P. Carey",
-   "url": "https://claude.ai/artifact/XW9UYaVpppDudRbmfF4xXj",
    "currency": "USD"
   },
   {
